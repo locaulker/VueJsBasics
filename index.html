@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>VueJS Basics</title>
+		<script src="js/vue.js"></script>
+</head>
+<body>
+
+  <div id="app">
+		<h1>{{ message }}</h1>
+		<h2>{{ age > 26 ? 'Old' : 'Young' }}</h2>
+		<h2>{{ name.split(' ')[0] }}</h2>
+  </div>
+
+  
+
+  <script>
+    new Vue({
+			el: '#app',
+			data: {
+				message: 'Hello World!',
+				age: 27,
+				name: 'Lawrence Caulker'
+			}
+    })
+	</script>
+	
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
